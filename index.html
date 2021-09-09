@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final</title>
+<style>
+	.sr{
+		position: absolute;
+		top:100px;
+		left: 300px;
+		height: 50px;
+		width: 150px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.md{
+		position: absolute;
+		top:200px;
+		left: 300px;
+		height: 50px;
+		width: 150px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.menu1{
+		background:#B0CAFF;
+		position: absolute;
+		height: 100px;
+		width: 200px;
+		border-radius: 10px;
+		left: 500px;
+		top: 50px;
+	}
+	.su{
+		position: absolute;
+		top:30px;
+		left: 1px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.re{
+		position: absolute;
+		top:30px;
+		left: 150px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.menu2{
+		background:#B0CAFF;
+		position: absolute;
+		height: 100px;
+		width: 200px;
+		border-radius: 10px;
+		left: 500px;
+		top: 200px;
+	}
+	.mu{
+		position: absolute;
+		top:1px;
+		left: 1px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.divi{
+		position: absolute;
+		top:1px;
+		left: 150px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+	}
+	.n1{
+		position: absolute;
+		top:1px;
+		left: 1px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+	}
+	.n2{
+		position: absolute;
+		top:1px;
+		left: 140px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+		z-index: 3;
+		
+	}
+		.n11{
+	position: absolute;
+		top:1px;
+		left: -150px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+		z-index: 3;	
+	}
+	.n22{
+		position: absolute;
+		top:1px;
+		left: 1px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+		z-index: 3;
+		
+	}
+	.cuadro{
+		background:#B0CAFF;
+		position: absolute;
+		height: 50px;
+		width: 500px;
+		border-radius: 10px;
+		left: 800px;
+		top: 50px;
+		transition: all 2s;
+	}
+	.cuadro2{
+		background:#B0CAFF;
+		position: absolute;
+		height: 50px;
+		width: 500px;
+		border-radius: 10px;
+		left: 800px;
+		top: 120px;
+		transition: all 2s;
+	}
+
+	.r1{
+		background:white;
+		position: absolute;
+		height: 20px;
+		width: 150px;
+		border-radius: 10px;
+		left: 1px;
+		top: 1px;
+	}
+	.r2{
+		background:white;
+		position: absolute;
+		height: 20px;
+		width: 150px;
+		border-radius: 10px;
+		left: 1px;
+		top: 50px;
+	}
+	.nn1{
+		position: absolute;
+		top:1px;
+		left: 1px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+	}
+	.nn2{
+		position: absolute;
+		top:1px;
+		left: 140px;
+		height: 50px;
+		width: 50px;
+		border-radius: 10px;
+		background: #5BB99F;
+		font-size: 12px;
+		display: none;
+		z-index: 3;
+		
+	}
+</style>
+</head>
+<body>
+<div class="sr" id="sr1" onclick="sur()">SR</div>
+<div class="md" id="md1" onclick="mud()">SD</div>
+<div class="cuadro" id="cp">
+	<div class="r1" id="rs" onclick="rsu()">RESULTADO SUMA</div>
+	
+
+</div>
+<div class="cuadro2" id="cp2" >
+	<div class="r2" id="rs2" onclick="rrs()">RESULTADO RESTA</div>
+</div>
+<div class="menu1">
+	<div class="su" onclick="suma()"><center>+</center>
+		<input type="text" class="n1" id="numero1" placeholder="Número1"><br><br>
+		<input type="text" class="n2" id="numero2" placeholder="Número2"><br><br><br>
+	</div>
+	<div class="re" onclick="resta()"><center>-</center>
+		<input type="text" class="n11" id="num1" placeholder="Número1"><br><br>
+		<input type="text" class="n22" id="num2" placeholder="Número2"><br><br><br>
+	</div>
+	
+
+</div>
+<div class="menu2">
+	<div class="mu" onclick="multi()"><center>*</center>
+		<input type="text" class="nn1" id="nume1" placeholder="Número1"><br><br>
+		<input type="text" class="nn2" id="nume2" placeholder="Número2"><br><br><br>
+	</div>
+	<div class="divi" onclick="division()"><center>/</center></div>
+</div>
+</body>
+<script>
+	function suma(){
+		numero1.style.display="block";
+		numero2.style.display="block";
+	}
+	function resta(){
+		num1.style.display="block";
+		num2.style.display="block";
+	}
+	function rsu(){
+		x=Number(numero1.value)
+		y=Number(numero2.value);
+		sumaa=x+y;
+		cp.innerHTML="El total es: "+sumaa;
+		cp.style.background="#B5FFB0";
+	}
+	function rrs(){
+		x=Number(numero1.value)
+		y=Number(numero2.value);
+		restaa=x-y;
+		cp2.innerHTML="El total es: "+restaa;
+	}
+	function multi(){
+		nume1.style.display="block";
+		nume2.style.display="block";
+	}
+</script>
+</html>
